@@ -48,7 +48,7 @@ graph TB
     subgraph "External APIs"
         AGMARK[Agmarknet API]
         WEATHER[OpenWeather API]
-        CLAUDE[Claude API]
+        AIAGENT[AI Agent]
     end
     
     MA --> AG
@@ -64,7 +64,7 @@ graph TB
     AG --> MLP
     
     CHA --> CV
-    CHA --> CLAUDE
+    CHA --> AIAGENT
     AE --> WEATHER
     AE --> NLP
     MIS --> FORECAST
@@ -96,7 +96,7 @@ graph TB
 - PostgreSQL for persistent data storage
 
 **AI/ML:**
-- Claude API for natural language processing and crop advisory
+- AI Agent for natural language processing and crop advisory
 - TensorFlow/PyTorch for custom computer vision models
 - Scikit-learn for time-series forecasting
 - Hugging Face Transformers for multilingual support
@@ -129,7 +129,7 @@ class CropHealthAnalyzer:
 ```
 
 **Integration Points:**
-- Claude API for generating contextual treatment advice
+- AI Agent for generating contextual treatment advice
 - File storage for temporary image processing
 - Translation service for multilingual recommendations
 
@@ -389,7 +389,7 @@ Based on the requirements analysis, the following properties must hold for all v
 **External Service Failures:**
 - Agmarknet API unavailability or rate limiting
 - OpenWeather API failures or quota exceeded
-- Claude API service interruptions
+- AI Agent service interruptions
 - SMS/WhatsApp gateway failures
 
 **System Resource Errors:**
@@ -476,7 +476,7 @@ def test_crop_analysis_completeness(crop_image, crop_type):
 **External API Mocking:**
 - Agmarknet API responses with realistic price data
 - OpenWeather API responses for different weather conditions
-- Claude API responses for various crop advisory scenarios
+- AI Agent responses for various crop advisory scenarios
 - WhatsApp/SMS gateway responses for communication testing
 
 ### Integration Testing

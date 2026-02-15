@@ -52,7 +52,7 @@ The implementation prioritizes core functionality first, with optional testing t
 
 - [ ] 4. Develop Crop Health Analyzer service
   - [ ] 4.1 Set up computer vision pipeline
-    - Integrate Claude API for image analysis
+    - Integrate AI Agent for image analysis
     - Implement image preprocessing and validation
     - Create disease/pest identification logic
     - Add confidence scoring and result formatting
